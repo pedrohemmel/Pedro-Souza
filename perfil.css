@@ -1,140 +1,446 @@
 body {
-    background-color: rgb(81, 206, 255);
-    font-family: Candara, Helvetica, sans-serif;
-  }
-  
-  .fundoTopo {
-    background-color: white;
+  background-color: rgb(81, 206, 255);
+  font-family: Candara, Helvetica, sans-serif;
+}
+
+.fundoTopo {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  box-shadow: 1px 1px 10px rgb(150, 151, 151);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+}
+
+#menuTopo  {
+  width: 40%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  padding: 40px 50px 40px 50px;
+  user-select: none;
+  cursor: pointer;
+}
+
+#menuTopo a {
+  text-decoration: none;
+  color: rgb(81, 206, 255);
+  text-shadow: 1px 1px 3px rgb(233, 233, 233);
+  transition: font-size 0.3s;
+}
+
+#menuTopo a:hover {
+  font-size: 28px;
+}
+
+#entreEmContato {
+  width: 200px;
+  height: 40px;
+  color: rgb(81, 206, 255);
+  position: absolute;
+  top: 28px;
+  left: 55%;
+  border: 3px solid rgb(142, 164, 167);
+  border-radius: 10px; 
+}
+
+#entreEmContato a {
+  user-select: none;
+  text-decoration: none;
+  color: rgb(81, 206, 255);
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+#entreEmContato:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.redesSociais {
+  width: 20%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  top: 25px;
+  right: 2%;
+  user-select: none;
+  cursor: pointer;
+}
+
+#fb:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+#ig:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+#link:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.perfilDireito {
+  background-color: white;
+  width: 60%;
+  height: 350px;
+  position: absolute;
+  top: 130px;
+  left: 2%;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 1px 1px 5px rgb(128, 138, 145);
+}
+
+.perfilDireito:hover {
+  box-shadow: 1px 1px 20px rgb(128, 138, 145);
+  transition: 0.5s;
+}
+
+#foto {
+  padding: 0 0 0 30px;
+  position: absolute;
+  top: 25px;
+  user-select: none;
+  cursor: pointer;
+}
+
+#foto img {
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 1px 1px 1px rgb(128, 138, 145);
+}
+
+#foto img:hover {
+  transition: 0.5s;
+  box-shadow: 1px 1px 10px rgb(128, 138, 145);
+}
+
+#apresentacao {
+  width: 50%;
+  height: 150px;
+  color: rgb(142, 164, 167);
+  position: absolute;
+  top: 25px;
+  left: 320px;
+  font-size: 1.2em;
+  text-shadow: 0 0 1px rgb(202, 201, 201);
+  text-align: center;
+  transition: 0.5s;
+}
+
+#apresentacao:hover {
+  transition: 0.5s;
+  text-shadow: 0 0 3px rgb(202, 201, 201);
+}
+
+#botaoMenu {
+  display: none;
+}
+
+#redesAdap {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1167px) {
+
+.perfilDireito {
+  width: 70%;
+}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  #menuTopoAuto {
     width: 100%;
-    height: 100px;
-    box-shadow: 1px 1px 10px rgb(150, 151, 151);
+    height: 100%;
+    background-color: white;
+    background-image: linear-gradient(to bottom, transparent, rgb(236, 252, 250));
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 20px;
+    padding: 119px 0px 119px 0px;
+    border-bottom: 1px solid black;
+    display: none;
   }
-  
-  #menuTopo  {
-    width: 40%;
-    height: 100px;
+
+  #menuDentro {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    padding: 40px 50px 40px 50px;
+    height: 500px; 
   }
-  
-  #menuTopo a {
+
+  #menuDentro a {
+    text-align: center;
+    border-bottom: 1px solid rgb(180, 177, 177);
+    text-shadow: 0 0 1px rgb(180, 177, 177);
     text-decoration: none;
     color: rgb(81, 206, 255);
-    text-shadow: 1px 1px 3px rgb(233, 233, 233);
-    transition: font-size 0.3s;
-  }
-  
-  #menuTopo a:hover {
-    font-size: 28px;
-  }
-  
-  #entreEmContato {
-    width: 200px;
-    height: 40px;
-    color: rgb(81, 206, 255);
-    position: absolute;
-    top: 28px;
-    left: 55%;
-    border: 3px solid rgb(142, 164, 167);
-    border-radius: 10px; 
-  }
-  
-  #entreEmContato a {
+    font-size: 30px;
+    padding: 60px 0 0 0;
     user-select: none;
-    text-decoration: none;
-    color: rgb(81, 206, 255);
+    cursor: pointer;
+  }
+
+  #botaoMenu {
     position: absolute;
-    top: 10px;
-    left: 20px;
+    top: 0;
+    left: 0;
+    border: none;
+    border-right: 1px solid rgb(231, 229, 229);
+    border-bottom: 1px solid rgb(231, 229, 229);
+    border-radius: 5px;
+    background-color: white;
+    display: block;
   }
-  
-  #entreEmContato:hover {
-    opacity: 0.5;
-    transition: 0.3s;
+
+  #botaoMenu img {
+    padding: 10px;
   }
-  
+
+
+  #menuTopo {
+    visibility: hidden;
+  }
+  .perfilDireito {
+    position: absolute;
+    width: 96%;
+  }
+
   .redesSociais {
+    width: 30%;
+  }
+
+  #fb img {
+  padding: 3px;
+  }
+
+  #ig {
+  padding: 3px;
+  }
+
+  #link {
+  padding: 3px;
+  }
+
+  #fb:hover {
+  opacity: 0.5;
+  }
+
+  #ig:hover {
+    opacity: 0.5;
+  }
+
+  #link:hover {
+    opacity: 0.5;
+  }
+
+
+  #entreEmContato { 
+  position: absolute;
+  top: 30px;
+  left: 30%;
+  box-shadow: 2px 2px 5px rgb(189, 187, 187);
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .perfilDireito {
+  width: 96%;
+  height: 600px;
+  
+  }
+
+  #foto {
+  align-items: center;
+  position: absolute;
+  left: 25%;
+  }
+
+  #apresentacao {
+    width: 90%;
+    position: absolute;
+    top: 350px;
+    left: 5%;
+  }
+
+  #entreEmContato { 
+  position: absolute;
+  left: 20%; 
+  }
+
+}
+
+@media screen and (max-width: 660px) {
+ 
+  .redesSociais {
+    display: none;
+  }
+
+  #redesAdap {
     width: 20%;
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: absolute;
-    top: 25px;
-    right: 2%;
-  }
-  
-  #fb:hover {
-    opacity: 0.5;
-    transition: 0.3s;
-  }
-  
-  #ig:hover {
-    opacity: 0.5;
-    transition: 0.3s;
-  }
-  
-  #link:hover {
-    opacity: 0.5;
-    transition: 0.3s;
-  }
-  
-  .perfilDireito {
-    background-color: white;
-    width: 60%;
-    height: 350px;
-    position: absolute;
-    top: 130px;
-    left: 2%;
-    border-radius: 10px;
-    transition: 0.5s;
-    box-shadow: 1px 1px 5px rgb(128, 138, 145);
-  }
-  
-  .perfilDireito:hover {
-    box-shadow: 1px 1px 20px rgb(128, 138, 145);
-    transition: 0.5s;
-  }
-  
-  #foto {
-    padding: 0 0 0 30px;
-    position: absolute;
-    top: 25px;
+    top: 30px;
+    right: 51%;
     user-select: none;
     cursor: pointer;
+    visibility: visible;
   }
-  
-  #foto img {
-    border-radius: 10px;
-    transition: 0.5s;
-    box-shadow: 1px 1px 1px rgb(128, 138, 145);
+
+  #redesAdap a {
+    padding: 0 10px 0 10px;
   }
-  
-  #foto img:hover {
-    transition: 0.5s;
-    box-shadow: 1px 1px 10px rgb(128, 138, 145);
-  }
-  
-  #apresentacao {
-    width: 50%;
-    height: 150px;
-    color: rgb(142, 164, 167);
+
+  #entreEmContato {
     position: absolute;
-    top: 25px;
-    left: 320px;
-    font-size: 1.2em;
-    text-shadow: 0 0 1px rgb(202, 201, 201);
-    text-align: center;
-    transition: 0.5s;
+    left: 35%;
   }
-  
-  #apresentacao:hover {
-    transition: 0.5s;
-    text-shadow: 0 0 3px rgb(202, 201, 201);
+
+  #foto {
+    position: absolute;
+    left: 20%;
   }
-  
-  
+
+}
+
+@media screen and (max-width: 550px) {
+  #foto {
+    left: 15%;
+  }
+
+  .perfilDireito {
+    height: 650px;
+  }
+
+}
+
+@media screen and (max-width: 465px) {
+
+  #foto {
+    left: 13%;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+
+  #foto {
+    left: 10%;
+  }
+
+  .perfilDireito {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+
+  #botaoMenu img {
+    width: 35px;
+    height: 20px;
+  }
+
+  #entreEmContato {
+    width: 150px;
+    height: 30px;
+  }
+
+  #entreEmContato a {
+    font-size: 0.8em;
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    
+  }
+
+  .fundoTopo {
+    height: 90px;
+  }
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+  #foto {
+    left: 9%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  #foto {
+    left: 8%;
+  }
+
+  .perfilDireito {
+    height: 750px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+
+  #foto {
+    left: 7%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  #foto {
+    left: 6%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  #foto {
+    left: 5%;
+  }
+}
+
+
+@media screen and (max-width: 365px) {
+
+  #foto {
+    left: 4%;
+  }
+}
+
+@media screen and (max-width: 355px) {
+
+  #foto {
+    left: 3%;
+  }
+}
+
+@media screen and (max-width: 345px) {
+
+  #foto {
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+
+  #foto {
+    left: 1%;
+  }
+}
+
+@media screen and (max-width: 335px) {
+
+  #foto {
+    left: 0%;
+  }
+}
