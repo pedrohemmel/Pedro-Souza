@@ -1,403 +1,401 @@
 body {
-    background-color: rgb(81, 206, 255);
-    font-family: Candara, Helvetica, sans-serif;
-  }
-  
-  .menuVisivel {
-    margin-left: 0;
-    transition: margin-left 1s;
-  }
-  
-  .menuInicio {
-    margin-left: -100%;
-  }
-  
-  .menuInvisivel {
-    margin-left: -100%;
-    transition: margin-left 1s;
-  }
-  
-  .fundoTopo {
+  background-color: rgb(81, 206, 255);
+  font-family: Candara, Helvetica, sans-serif;
+}
+
+.menuVisivel {
+  margin-left: 0;
+  transition: margin-left 1s;
+}
+
+.menuInicio {
+  margin-left: -100%;
+}
+
+.menuInvisivel {
+  margin-left: -100%;
+  transition: margin-left 1s;
+}
+
+.fundoTopo {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  box-shadow: 1px 1px 10px rgb(150, 151, 151);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+}
+
+#menuTopo  {
+  width: 40%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  padding: 40px 50px 40px 50px;
+}
+
+#menuTopo a {
+  text-decoration: none;
+  color: rgb(81, 206, 255);
+  text-shadow: 1px 1px 3px rgb(233, 233, 233);
+  transition: font-size 0.3s;
+}
+
+#menuTopo a:hover {
+  font-size: 28px;
+}
+
+#entreEmContato {
+  width: 200px;
+  height: 40px;
+  color: rgb(81, 206, 255);
+  position: absolute;
+  top: 28px;
+  left: 55%;
+  border: 3px solid rgb(142, 164, 167);
+  border-radius: 10px; 
+}
+
+#entreEmContato a {
+  user-select: none;
+  text-decoration: none;
+  color: rgb(81, 206, 255);
+  position: absolute;
+  top: 7px;
+  left: 25px;
+}
+
+#entreEmContato:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.redesSociais {
+  width: 20%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  top: 25px;
+  right: 2%;
+}
+
+#fb:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+#ig:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+#link:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.perfilDireito:hover {
+  box-shadow: 1px 1px 20px rgb(128, 138, 145);
+  transition: 0.5s;
+}
+
+
+  .bloco {
     background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+  }
+
+  .exArtigo {
+    float: left;
+    width: 73%;
+  }
+
+  .curiosidade {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+
+  #blocoCuriosidade {
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+    background-image: url("https://i.pinimg.com/736x/18/91/3e/18913e7d4a062770a976f61cce97130d.jpg");
+    background-size: 200%;
+    height: 205px;
+  }
+
+  .exFoto img {
+    border-radius: 3px;
+  }
+
+  #tituloServer {
+    position: absolute;
+    left: 22%;
+    top: 125px;
+  }
+
+  #tituloServer a {
+    text-decoration: none;
+    color: rgb(142, 164, 167);
+    text-shadow: 1px 1px 3px rgb(233, 233, 233);
+  }
+
+  #textoServer {
+    width: 45%;
+    position: absolute;
+    left: 22%;
+    top: 180px;
+  }
+
+  #textoServer a {
+    text-decoration: none;
+    color: rgb(142, 164, 167);
+  }
+
+  #linkServer {
+    border-radius: 3px;
+    border: 2px solid rgb(142, 164, 167);
+    width: 200px;
+    height: 50px;
+    background-color: rgb(81, 206, 255); 
+    position: absolute;
+    left: 50%;
+    top: 290px;
+  }
+  
+  #linkServer a {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  #botaoMenu {
+    display: none;
+  }
+
+  #redesAdap {
+    visibility: hidden;
+  }
+
+@media screen and (max-width: 1000px) {
+
+  #menuTopoAuto {
     width: 100%;
-    height: 100px;
-    box-shadow: 1px 1px 10px rgb(150, 151, 151);
+    height: 100%;
+    background-color: white;
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 20px;
+    padding: 119px 0px 119px 0px;
+    border-bottom: 1px solid black;
   }
-  
-  #menuTopo  {
-    width: 40%;
-    height: 100px;
+
+  #menuDentro {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    padding: 40px 50px 40px 50px;
+    height: 320px; 
   }
-  
-  #menuTopo a {
+
+  #menuDentro a {
+    text-align: center;
+    border-bottom: 1px solid rgb(180, 177, 177);
+    text-shadow: 0 0 1px rgb(180, 177, 177);
     text-decoration: none;
     color: rgb(81, 206, 255);
-    text-shadow: 1px 1px 3px rgb(233, 233, 233);
-    transition: font-size 0.3s;
-  }
-  
-  #menuTopo a:hover {
-    font-size: 28px;
-  }
-  
-  #entreEmContato {
-    width: 200px;
-    height: 40px;
-    color: rgb(81, 206, 255);
-    position: absolute;
-    top: 28px;
-    left: 55%;
-    border: 3px solid rgb(142, 164, 167);
-    border-radius: 10px; 
-  }
-  
-  #entreEmContato a {
+    font-size: 30px;
+    padding: 39px 0 0 0;
     user-select: none;
-    text-decoration: none;
-    color: rgb(81, 206, 255);
+    cursor: pointer;
+  }
+
+  #botaoMenu {
     position: absolute;
-    top: 7px;
-    left: 25px;
+    top: 0;
+    left: 0;
+    background: none;
+    border: none;
+    display: block;
   }
-  
-  #entreEmContato:hover {
-    opacity: 0.5;
-    transition: 0.3s;
+
+  #botaoMenu img {
+    padding: 10px;
   }
-  
+
+
+  #menuTopo {
+    visibility: hidden;
+  }
+  .perfilDireito {
+    position: absolute;
+    width: 96%;
+  }
+
   .redesSociais {
+    width: 30%;
+  }
+
+  #fb img {
+  padding: 3px;
+  }
+
+  #ig {
+  padding: 3px;
+  }
+
+  #link {
+  padding: 3px;
+  }
+
+  #fb:hover {
+  opacity: 0.5;
+  }
+
+  #ig:hover {
+    opacity: 0.5;
+  }
+
+  #link:hover {
+    opacity: 0.5;
+  }
+
+
+  #entreEmContato { 
+  position: absolute;
+  top: 30px;
+  left: 30%;
+  box-shadow: 2px 2px 5px rgb(189, 187, 187);
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .perfilDireito {
+  width: 96%;
+  height: 600px;
+  
+  }
+
+  #foto {
+  align-items: center;
+  position: absolute;
+  left: 25%;
+  }
+
+  #apresentacao {
+    width: 90%;
+    position: absolute;
+    top: 350px;
+    left: 5%;
+  }
+
+  #entreEmContato { 
+  position: absolute;
+  left: 20%; 
+  }
+
+}
+
+@media screen and (max-width: 660px) {
+ 
+  .redesSociais {
+    display: none;
+  }
+
+  #redesAdap {
     width: 20%;
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: absolute;
-    top: 25px;
-    right: 2%;
-  }
-  
-  #fb:hover {
-    opacity: 0.5;
-    transition: 0.3s;
-  }
-  
-  #ig:hover {
-    opacity: 0.5;
-    transition: 0.3s;
-  }
-  
-  #link:hover {
-    opacity: 0.5;
-    transition: 0.3s;
-  }
-  
-  .perfilDireito:hover {
-    box-shadow: 1px 1px 20px rgb(128, 138, 145);
-    transition: 0.5s;
-  }
-  
-  
-    .bloco {
-      background-color: white;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
-      border-radius: 3px;
-    }
-  
-    .exArtigo {
-      float: left;
-      width: 73%;
-    }
-  
-    .curiosidade {
-      float: left;
-      width: 25%;
-      padding-left: 20px;
-    }
-  
-    #blocoCuriosidade {
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
-      border-radius: 3px;
-      background-image: url("https://i.pinimg.com/736x/18/91/3e/18913e7d4a062770a976f61cce97130d.jpg");
-      background-size: 200%;
-      height: 205px;
-    }
-  
-    .exFoto img {
-      border-radius: 3px;
-    }
-  
-    #tituloServer {
-      position: absolute;
-      left: 22%;
-      top: 125px;
-    }
-  
-    #tituloServer a {
-      text-decoration: none;
-      color: rgb(142, 164, 167);
-      text-shadow: 1px 1px 3px rgb(233, 233, 233);
-    }
-  
-    #textoServer {
-      width: 45%;
-      position: absolute;
-      left: 22%;
-      top: 180px;
-    }
-  
-    #textoServer a {
-      text-decoration: none;
-      color: rgb(142, 164, 167);
-    }
-  
-    #linkServer {
-      border-radius: 3px;
-      border: 2px solid rgb(142, 164, 167);
-      width: 200px;
-      height: 50px;
-      background-color: rgb(81, 206, 255); 
-      position: absolute;
-      left: 50%;
-      top: 290px;
-    }
-    
-    #linkServer a {
-      position: absolute;
-      top: 15px;
-      left: 25px;
-      font-size: 1.2em;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-    }
-  
-    #botaoMenu {
-      display: none;
-    }
-  
-    #redesAdap {
-      visibility: hidden;
-    }
-  
-  @media screen and (max-width: 1000px) {
-  
-    #menuTopoAuto {
-      width: 100%;
-      height: 100%;
-      background-color: white;
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 119px 0px 119px 0px;
-      border-bottom: 1px solid black;
-    }
-  
-    #menuDentro {
-      display: grid;
-      height: 320px; 
-    }
-  
-    #menuDentro a {
-      text-align: center;
-      border-bottom: 1px solid rgb(180, 177, 177);
-      text-shadow: 0 0 1px rgb(180, 177, 177);
-      text-decoration: none;
-      color: rgb(81, 206, 255);
-      font-size: 30px;
-      padding: 39px 0 0 0;
-      user-select: none;
-      cursor: pointer;
-    }
-  
-    #botaoMenu {
-      position: absolute;
-      top: 0;
-      left: 0;
-      border: none;
-      border-right: 1px solid rgb(231, 229, 229);
-      border-bottom: 1px solid rgb(231, 229, 229);
-      border-radius: 5px;
-      background-color: white;
-      display: block;
-    }
-  
-    #botaoMenu img {
-      padding: 10px;
-    }
-  
-  
-    #menuTopo {
-      visibility: hidden;
-    }
-    .perfilDireito {
-      position: absolute;
-      width: 96%;
-    }
-  
-    .redesSociais {
-      width: 30%;
-    }
-  
-    #fb img {
-    padding: 3px;
-    }
-  
-    #ig {
-    padding: 3px;
-    }
-  
-    #link {
-    padding: 3px;
-    }
-  
-    #fb:hover {
-    opacity: 0.5;
-    }
-  
-    #ig:hover {
-      opacity: 0.5;
-    }
-  
-    #link:hover {
-      opacity: 0.5;
-    }
-  
-  
-    #entreEmContato { 
-    position: absolute;
     top: 30px;
-    left: 30%;
-    box-shadow: 2px 2px 5px rgb(189, 187, 187);
-    }
+    right: 51%;
+    user-select: none;
+    cursor: pointer;
+    visibility: visible;
   }
-  
-  @media screen and (max-width: 730px) {
-    .perfilDireito {
-    width: 96%;
-    height: 600px;
+
+  #redesAdap a {
+    padding: 0 10px 0 10px;
+  }
+
+  #entreEmContato {
+    position: absolute;
+    left: 35%;
+  }
+
+  #foto {
+    position: absolute;
+    left: 20%;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  #foto {
+    left: 15%;
+  }
+
+  .perfilDireito {
+    height: 650px;
+  }
+
+}
+
+@media screen and (max-width: 465px) {
+
+  #foto {
+    left: 13%;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+
+  #foto {
+    left: 10%;
+  }
+
+  .perfilDireito {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+
+  #botaoMenu img {
+    width: 35px;
+    height: 20px;
+  }
+
+  #entreEmContato {
+    width: 150px;
+    height: 30px;
+  }
+
+  #entreEmContato a {
+    font-size: 0.8em;
+    position: absolute;
+    top: 7px;
+    left: 12px;
     
-    }
-  
-    #foto {
-    align-items: center;
-    position: absolute;
-    left: 25%;
-    }
-  
-    #apresentacao {
-      width: 90%;
-      position: absolute;
-      top: 350px;
-      left: 5%;
-    }
-  
-    #entreEmContato { 
-    position: absolute;
-    left: 20%; 
-    }
-  
   }
-  
-  @media screen and (max-width: 660px) {
-   
-    .redesSociais {
-      display: none;
-    }
-  
-    #redesAdap {
-      width: 20%;
-      align-items: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      position: absolute;
-      top: 30px;
-      right: 51%;
-      user-select: none;
-      cursor: pointer;
-      visibility: visible;
-    }
-  
-    #redesAdap a {
-      padding: 0 10px 0 10px;
-    }
-  
-    #entreEmContato {
-      position: absolute;
-      left: 35%;
-    }
-  
-    #foto {
-      position: absolute;
-      left: 20%;
-    }
-  
+
+  .fundoTopo {
+    height: 90px;
   }
-  
-  @media screen and (max-width: 550px) {
-    #foto {
-      left: 15%;
-    }
-  
-    .perfilDireito {
-      height: 650px;
-    }
-  
-  }
-  
-  @media screen and (max-width: 465px) {
-  
-    #foto {
-      left: 13%;
-    }
-  
-  }
-  
-  @media screen and (max-width: 425px) {
-  
-    #foto {
-      left: 10%;
-    }
-  
-    .perfilDireito {
-      height: 700px;
-    }
-  }
-  
-  @media screen and (max-width: 410px) {
-  
-    #botaoMenu img {
-      width: 35px;
-      height: 20px;
-    }
-  
-    #entreEmContato {
-      width: 150px;
-      height: 30px;
-    }
-  
-    #entreEmContato a {
-      font-size: 0.8em;
-      position: absolute;
-      top: 7px;
-      left: 12px;
-      
-    }
-  
-    .fundoTopo {
-      height: 90px;
-    }
-  
-  
-  }
-  
+
+
+}
+
+
   
