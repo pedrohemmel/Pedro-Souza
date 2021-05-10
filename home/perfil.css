@@ -108,7 +108,7 @@ body {
   position: absolute;
   top: 130px;
   left: 2%;
-  border-radius: 10px;
+  border-radius: 3px;
   transition: 0.5s;
   box-shadow: 1px 1px 5px rgb(128, 138, 145);
 }
@@ -127,7 +127,7 @@ body {
 }
 
 #foto img {
-  border-radius: 10px;
+  border-radius: 3px;
   transition: 0.5s;
   box-shadow: 1px 1px 1px rgb(128, 138, 145);
 }
