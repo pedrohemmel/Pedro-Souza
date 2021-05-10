@@ -3,9 +3,9 @@ var button = document.getElementById("botaoMenu");
 button.addEventListener("click", function() {
   var menuTopoAuto = document.getElementById("menuTopoAuto");
 
-  if(menuTopoAuto.style.display === "block") {
-    menuTopoAuto.style.display = "none";
+  if(menuTopoAuto.className === "menuVisivel") {
+    menuTopoAuto.className = "menuInvisivel";
   } else {
-    menuTopoAuto.style.display = "block";
+    menuTopoAuto.className = "menuVisivel";
   }
 });

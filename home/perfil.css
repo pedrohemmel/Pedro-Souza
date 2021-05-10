@@ -3,6 +3,20 @@ body {
   font-family: Candara, Helvetica, sans-serif;
 }
 
+.menuVisivel {
+  margin-left: 0;
+  transition: margin-left 1s;
+}
+
+.menuInicio {
+  margin-left: -100%;
+}
+
+.menuInvisivel {
+  margin-left: -100%;
+  transition: margin-left 1s;
+}
+
 .fundoTopo {
   background-color: white;
   width: 100%;
@@ -51,8 +65,8 @@ body {
   text-decoration: none;
   color: rgb(81, 206, 255);
   position: absolute;
-  top: 10px;
-  left: 20px;
+  top: 7px;
+  left: 25px;
 }
 
 #entreEmContato:hover {
@@ -168,7 +182,6 @@ body {
     left: 0;
     padding: 119px 0px 119px 0px;
     border-bottom: 1px solid black;
-    display: none;
   }
 
   #menuDentro {
@@ -357,7 +370,7 @@ body {
   #entreEmContato a {
     font-size: 0.8em;
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: 12px;
     
   }
@@ -443,3 +456,4 @@ body {
     left: 0%;
   }
 }
+

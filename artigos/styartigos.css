@@ -1,0 +1,714 @@
+body {
+  background-color: rgb(81, 206, 255);
+  font-family: Candara, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+.menuVisivel {
+  margin-left: 0;
+  transition: margin-left 1s;
+}
+
+.menuInicio {
+  margin-left: -100%;
+}
+
+.menuInvisivel {
+  margin-left: -100%;
+  transition: margin-left 1s;
+}
+
+.fundoTopo {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  box-shadow: 1px 1px 10px rgb(150, 151, 151);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+}
+
+#menuTopo  {
+  width: 40%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  padding: 40px 50px 40px 50px;
+}
+
+#menuTopo a {
+  text-decoration: none;
+  color: rgb(81, 206, 255);
+  text-shadow: 1px 1px 3px rgb(233, 233, 233);
+  transition: font-size 0.3s;
+}
+
+#menuTopo a:hover {
+  font-size: 28px;
+}
+
+#entreEmContato {
+  width: 200px;
+  height: 40px;
+  color: rgb(81, 206, 255);
+  position: absolute;
+  top: 28px;
+  left: 55%;
+  border: 3px solid rgb(142, 164, 167);
+  border-radius: 10px; 
+}
+
+#entreEmContato a {
+  user-select: none;
+  text-decoration: none;
+  color: rgb(81, 206, 255);
+  position: absolute;
+  top: 7px;
+  left: 25px;
+}
+
+#entreEmContato:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.redesSociais {
+  width: 20%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  top: 25px;
+  right: 2%;
+}
+
+#fb:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+#ig:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+#link:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.perfilDireito:hover {
+  box-shadow: 1px 1px 20px rgb(128, 138, 145);
+  transition: 0.5s;
+}
+
+
+  .bloco {
+    background-color: white;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgb(184, 183, 183);
+  }
+
+  .exArtigo {
+    float: left;
+    width: 71%;
+    position: absolute;
+    top: 130px;
+    
+  }
+
+  .curiosidade {
+    float: left;
+    width: 25%;
+    padding-right: 12px;
+    position: absolute;
+    top: 130px;
+    right: 0;
+  }
+
+  #blocoCuriosidade {
+    padding: 20px;
+    border-radius: 3px;
+    background-color: #B5E6DF;
+    background-image: linear-gradient(to left, transparent, #559BE6);
+    background-size: 200%;
+    height: 205px;
+    color: white;
+    box-shadow: 1px 1px 5px rgb(184, 183, 183);
+  }
+
+  .curiTitulo {
+    position: absolute;
+    top: 0;
+    width: 85%;
+  }
+
+  .curiTexto {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    width: 85%;
+  }
+
+  .exFoto img {
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgb(184, 183, 183);
+  }
+
+  #tituloServer {
+    position: absolute;
+    left: 27%;
+    top: 20px;
+  }
+
+  #tituloServer a {
+    text-decoration: none;
+    color: rgb(142, 164, 167);
+    text-shadow: 1px 1px 3px rgb(233, 233, 233);
+  }
+
+  #textoServer {
+    position: absolute;
+    left: 27%;
+    top: 70px;
+    width: 70%;
+  }
+
+  #textoServer a {
+    text-decoration: none;
+    color: rgb(142, 164, 167);
+  }
+
+  #linkServer {
+    border-radius: 3px;
+    border: 2px solid rgb(142, 164, 167);
+    width: 200px;
+    height: 50px;
+    background-color: rgb(81, 206, 255); 
+    position: absolute;
+    left: 70%;
+    top: 167px;
+  }
+
+  #linkServer:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+  
+  #linkServer a {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    padding-top: 12px;
+  }
+
+  #botaoMenu {
+    display: none;
+  }
+
+  #redesAdap {
+    visibility: hidden;
+  }
+
+@media screen and (max-width: 1215px) {
+  #linkServer {
+    position: absolute;
+    left: 75%;
+  }
+
+  #tituloServer  {
+    position: absolute;
+    left: 30%;
+  }
+
+  #textoServer {
+    position: absolute;
+    left: 30%;
+  }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+  #linkServer {
+    position: absolute;
+    left: 73%;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  #linkServer {
+    width: 150px;
+    height: 40px;
+    top: 175px;
+  }
+
+  #linkServer a {
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    font-size: 1.0em;
+  }
+
+  #textoServer {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #tituloServer {
+    top: 0;
+    left: 33%;
+  }
+
+  #textoServer {
+    top: 50px;
+    left: 33%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .exFoto img {
+    position: absolute;
+    left: 30%;
+  }
+
+  .curiosidade {
+    width: 45%;
+  }
+
+  #linkServer {
+   
+    top: 430px;
+    left: 65%;
+  }
+
+  .bloco {
+    background-color: white;
+    padding: 20px;
+    border-radius: 3px;
+    height: 450px;
+    box-shadow: 1px 1px 5px rgb(184, 183, 183);
+  }
+
+  .exArtigo {
+    float: left;
+    width: 50%;
+    position: absolute;
+    top: 130px;
+  }
+
+  #tituloServer {
+    top: 240px;
+    left: 35%;
+  }
+
+  #textoServer {
+    top: 300px;
+    width: 80%;
+    left: 10%;
+  }
+
+  #menuTopoAuto {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 119px 0px 119px 0px;
+    border-bottom: 1px solid black;
+  }
+
+  #menuDentro {
+    display: grid;
+    height: 320px; 
+  }
+
+  #menuDentro a {
+    text-align: center;
+    border-bottom: 1px solid rgb(180, 177, 177);
+    text-shadow: 0 0 1px rgb(180, 177, 177);
+    text-decoration: none;
+    color: rgb(81, 206, 255);
+    font-size: 30px;
+    padding: 60px 0 0 0;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  #botaoMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    border-right: 1px solid rgb(231, 229, 229);
+    border-bottom: 1px solid rgb(231, 229, 229);
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+  }
+
+  #botaoMenu img {
+    padding: 10px;
+  }
+
+
+  #menuTopo {
+    visibility: hidden;
+  }
+  .perfilDireito {
+    position: absolute;
+    width: 96%;
+  }
+
+  .redesSociais {
+    width: 30%;
+  }
+
+  #fb img {
+  padding: 3px;
+  }
+
+  #ig {
+  padding: 3px;
+  }
+
+  #link {
+  padding: 3px;
+  }
+
+  #fb:hover {
+  opacity: 0.5;
+  }
+
+  #ig:hover {
+    opacity: 0.5;
+  }
+
+  #link:hover {
+    opacity: 0.5;
+  }
+
+
+  #entreEmContato { 
+  position: absolute;
+  top: 30px;
+  left: 30%;
+  box-shadow: 2px 2px 5px rgb(189, 187, 187);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #linkServer {
+    left: 60%;
+  }
+
+  .exFoto img {
+    left: 25%;
+  }
+
+  #tituloServer {
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .exFoto img {
+    position: absolute;
+    left: 29%;
+  }
+
+  #tituloServer {
+    left: 35%;
+  }
+
+  .exArtigo {
+    width: 60%;
+    
+  }
+
+  .curiosidade {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  #linkServer {
+    left: 55%;
+  }
+  .exFoto img {
+    position: absolute;
+    left: 24%;
+  }
+
+  #tituloServer {
+    left: 30%;
+  }
+
+  .perfilDireito {
+  width: 96%;
+  height: 600px;
+  
+  }
+
+  #foto {
+  align-items: center;
+  position: absolute;
+  left: 25%;
+  }
+
+  #apresentacao {
+    width: 90%;
+    position: absolute;
+    top: 350px;
+    left: 5%;
+  }
+
+  #entreEmContato { 
+  position: absolute;
+  left: 20%; 
+  }
+
+}
+
+@media screen and (max-width: 660px) {
+ 
+  .redesSociais {
+    display: none;
+  }
+
+  #redesAdap {
+    width: 20%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    top: 30px;
+    right: 51%;
+    user-select: none;
+    cursor: pointer;
+    visibility: visible;
+  }
+
+  #redesAdap a {
+    padding: 0 10px 0 10px;
+  }
+
+  #entreEmContato {
+    position: absolute;
+    left: 35%;
+  }
+
+  #foto {
+    position: absolute;
+    left: 20%;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  .exArtigo {
+    width: 99.5%;
+    position: static;
+    padding: 100px 0 0 0;
+  }
+
+  .exFoto img {
+    left: 34%;
+  }
+
+  #tituloServer {
+    position: absolute;
+    top: 350px;
+    left: 39%;
+  }
+
+  #textoServer {
+    padding: 120px 0 0 0;
+  }
+
+  #linkServer {
+    top: 550px;
+    left: 63%;
+  }
+
+  .curiosidade {
+    position: static;
+    padding: 20px 0px 0 0px;
+    width: 99.5%;
+  }
+
+  .curiosidade a {
+    text-decoration: none;
+  }
+
+  .curiTitulo {
+    position: static;
+    width: 85%;
+    text-decoration: none;
+  }
+
+  .curiTexto {
+    position: static;
+    bottom: 30px;
+    left: 20px;
+    width: 85%;
+    text-decoration: none;
+    padding: 50px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .exFoto img {
+    left: 31%;
+  }
+
+  #tituloServer {
+    position: absolute;
+    top: 350px;
+    left: 37%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .exFoto img {
+    left: 29%;
+  }
+
+  #tituloServer {
+    position: absolute;
+    top: 350px;
+    left: 35%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .exFoto img {
+    left: 27%;
+  }
+
+  #tituloServer {
+    position: absolute;
+    top: 350px;
+    left: 33%;
+  }
+
+  #textoServer {
+    width: 85%;
+  }
+
+  #linkServer {
+    top: 550px;
+    left: 60%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+
+  #blocoCuriosidade {
+    height: 240px;
+  }
+
+  .curiTitulo {
+    width: 90%;
+  }
+
+  .exFoto img {
+    left: 25%;
+  }
+
+  #tituloServer {
+    position: absolute;
+    left: 31%;
+  }
+
+  #textoServer {
+    width: 86%;
+    top: 305px;
+    left: 10%;
+  }
+
+  #linkServer {
+    top: 600px;
+    left: 55%;
+  }
+
+  .bloco {
+    height: 500px;
+  }
+
+  #botaoMenu img {
+    width: 35px;
+    height: 20px;
+  }
+
+  #entreEmContato {
+    width: 150px;
+    height: 30px;
+  }
+
+  #entreEmContato a {
+    font-size: 0.8em;
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    
+  }
+
+  .fundoTopo {
+    height: 90px;
+  }
+
+
+}
+
+@media screen and (max-width: 400px) {
+  .exFoto img {
+    left: 23%;
+  }
+
+  #tituloServer {
+    position: absolute;
+    left: 30%;
+  }
+
+  #linkServer {
+    top: 600px;
+    left: 50%;
+  }
+
+  #textoServer {
+    width: 86%;
+    top: 305px;
+    left: 7%;
+  }
+
+}
+
+@media screen and (max-width: 340px) {
+  .exFoto img {
+    left: 21%;
+  }
+
+  #tituloServer {
+    position: absolute;
+    left: 28%;
+  }
+
+  #linkServer {
+    top: 600px;
+    left: 45%;
+  }
+
+}
