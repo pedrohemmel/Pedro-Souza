@@ -1,0 +1,306 @@
+body {
+  background-color: rgb(81, 206, 255);
+  font-family: "system-ui","-apple-system","Segoe UI","Helvetica Neue","Noto Sans","Liberation Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji", "SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New","monospace";
+}
+
+h1 {
+  padding: 0 0px 0 40px;
+  color: rgb(81, 206, 255);
+  text-shadow: 1px 1px 1px rgb(121, 117, 117);
+  font-size: 2.2em;
+}
+
+h2 {
+  padding: 0 40px 0 40px;
+  color: rgb(81, 206, 255);
+  text-shadow: 0.5px 0.5px 1px rgb(121, 117, 117);
+  font-size: 1.8em;
+}
+
+h3 {
+  padding: 0 40px 0 40px;
+}
+
+img {
+  padding: 15px 10px 15px 10px;
+}
+
+p {
+  padding: 0 40px 0 40px;
+  font-size: 1.2em;
+}
+
+.listaPonto {
+  padding: 0 60px 0 40px;
+  font-size: 1.2em;
+}
+
+.listaPonto p {
+  padding: 0 20px 0 0px;
+  font-size: 1em;
+}
+
+.imgArtigo {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.menuVisivel {
+  margin-left: 0;
+  transition: margin-left 1s;
+}
+
+.menuInicio {
+  margin-left: -100%;
+}
+
+.menuInvisivel {
+  margin-left: -100%;
+  transition: margin-left 1s;
+}
+
+.fundoTopo {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  box-shadow: 1px 1px 10px rgb(150, 151, 151);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+}
+
+.artigo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 80px 0 0 0;
+}
+
+.fundoArtigo {
+  background-color: white;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px rgb(150, 151, 151);
+}
+
+#menuTopo  {
+  width: 40%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  justify-items: center;
+  align-items: center;
+}
+
+#menuTopo a {
+  text-decoration: none;
+  color: rgb(81, 206, 255);
+  text-shadow: 1px 1px 3px rgb(233, 233, 233);
+  transition: font-size 0.3s;
+}
+
+#menuTopo a:hover {
+  font-size: 28px;
+}
+
+#redesAdap {
+  display: none;
+}
+
+#botaoMenu {
+  display: none;
+}
+
+@media screen and (max-width: 1500px) {
+  .imgArtigo {
+    width: 100%;
+  }
+  .imgArtigo img {
+  width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  .fundoTopo {
+    height: 55px;
+  }
+
+  .artigo {
+    padding: 35px 0 0 0;
+  }
+
+  #menuTopoAuto {
+    width: 60%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0px 0px 0px 0px;
+    border-bottom: 1px solid rgb(131, 129, 129);
+    border-right: 1px solid rgb(131, 129, 129);
+  }
+
+  #menuDentro {
+    display: grid;
+    height: 375px; 
+  }
+
+  #menuDentro a {
+    text-align: center;
+    border-bottom: 1px solid rgb(180, 177, 177);
+    text-shadow: 0 0 1px rgb(180, 177, 177);
+    text-decoration: none;
+    color: rgb(81, 206, 255);
+    font-size: 30px;
+    padding: 45px 0 0 0;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  #botaoMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none;
+    border: none;
+    display: block;
+  }
+
+  #botaoMenu img {
+    padding: 10px;
+  }
+
+
+  #menuTopo {
+    visibility: hidden;
+  }
+
+  
+}
+
+
+@media screen and (max-width: 660px) {
+
+  .fundoArtigo {
+    width: 95%;
+  }
+ 
+  .redesSociais {
+    display: none;
+  }
+  #menuTopoAuto {
+    padding: 50px 0px 0px 0px;
+  }
+
+    #redesAdap {
+    width: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    user-select: none;
+    cursor: pointer;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+  padding: 0 0px 0 40px;
+  color: rgb(81, 206, 255);
+  text-shadow: 1px 1px 1px rgb(121, 117, 117);
+  font-size: 2.0em;
+}
+
+h2 {
+  padding: 0 40px 0 40px;
+  color: rgb(81, 206, 255);
+  text-shadow: 0.5px 0.5px 1px rgb(121, 117, 117);
+  font-size: 1.5em;
+}
+
+h3 {
+  padding: 0 40px 0 40px;
+}
+
+img {
+  padding: 15px 10px 15px 10px;
+}
+
+p {
+  padding: 0 40px 0 40px;
+  font-size: 1.0em;
+}
+.listaPonto {
+  padding: 0 60px 0 40px;
+  font-size: 1.0em;
+}
+
+.referencias {
+  font-size: 0.8em;
+}
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .fundoTopo {
+    height: 40px;
+  }
+
+  .artigo {
+    padding: 20px 0 0 0;
+  }
+  
+  .fundoArtigo {
+    width: 98%;
+  }
+
+ h1 {
+  padding: 0 0px 0 40px;
+  color: rgb(81, 206, 255);
+  text-shadow: 1px 1px 1px rgb(121, 117, 117);
+  font-size: 1.8em;
+}
+
+h2 {
+  padding: 0 40px 0 40px;
+  color: rgb(81, 206, 255);
+  text-shadow: 0.5px 0.5px 1px rgb(121, 117, 117);
+  font-size: 1.3em;
+}
+
+h3 {
+  padding: 0 40px 0 40px;
+}
+
+img {
+  padding: 15px 10px 15px 10px;
+}
+
+p {
+  padding: 0 40px 0 40px;
+  font-size: 0.8em;
+}
+.listaPonto {
+  padding: 0 60px 0 40px;
+  font-size: 0.8em;
+}
+
+
+  #botaoMenu img {
+    width: 35px;
+    height: 20px;
+  }
+
+
+}

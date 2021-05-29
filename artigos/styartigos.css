@@ -1,6 +1,6 @@
 body {
   background-color: rgb(81, 206, 255);
-  font-family: Candara, Helvetica, sans-serif;
+  font-family: "system-ui","-apple-system","Segoe UI","Helvetica Neue","Noto Sans","Liberation Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji", "SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New","monospace";
   font-size: 1.1em;
 }
 
@@ -57,15 +57,16 @@ body {
   left: 55%;
   border: 3px solid rgb(142, 164, 167);
   border-radius: 10px; 
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
 #entreEmContato a {
   user-select: none;
   text-decoration: none;
   color: rgb(81, 206, 255);
-  position: absolute;
-  top: 7px;
-  left: 25px;
 }
 
 #entreEmContato:hover {
@@ -104,112 +105,134 @@ body {
 }
 
 
-  .bloco {
-    background-color: white;
-    padding: 20px;
-    border-radius: 3px;
-    box-shadow: 1px 1px 5px rgb(184, 183, 183);
-  }
-
   .exArtigo {
     float: left;
-    width: 71%;
-    position: absolute;
-    top: 130px;
-    
+    width: 75%;
+    height: 250px;
+    padding: 80px 0 0 0;
   }
 
-  .curiosidade {
-    float: left;
-    width: 25%;
-    padding-right: 12px;
-    position: absolute;
-    top: 130px;
-    right: 0;
-  }
-
-  #blocoCuriosidade {
-    padding: 20px;
+  .bloco {
+    background-color: white;
     border-radius: 3px;
-    background-color: #B5E6DF;
-    background-image: linear-gradient(to left, transparent, #559BE6);
-    background-size: 200%;
-    height: 205px;
-    color: white;
     box-shadow: 1px 1px 5px rgb(184, 183, 183);
+    width: 100%;
+    height: 100%;
   }
 
-  .curiTitulo {
-    position: absolute;
-    top: 0;
-    width: 85%;
+  .gradeArtigo {
+    width: 100%;
+    height: 100%;
+    display: flex;
   }
 
-  .curiTexto {
-    position: absolute;
-    bottom: 30px;
-    left: 20px;
-    width: 85%;
+  .exFoto {
+    width: 25%;
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
   }
 
   .exFoto img {
     border-radius: 3px;
     box-shadow: 1px 1px 5px rgb(184, 183, 183);
+    
   }
 
-  #tituloServer {
-    position: absolute;
-    left: 27%;
-    top: 20px;
+  .textoArtigo {
+    width: 75%;
+    height: 70%;
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: left;
   }
 
-  #tituloServer a {
-    text-decoration: none;
+  .tituloServer {
     color: rgb(142, 164, 167);
     text-shadow: 1px 1px 3px rgb(233, 233, 233);
   }
 
-  #textoServer {
-    position: absolute;
-    left: 27%;
-    top: 70px;
-    width: 70%;
-  }
 
-  #textoServer a {
-    text-decoration: none;
+  .textoServer {
+    padding: 0 10px 0 0px;
     color: rgb(142, 164, 167);
   }
 
-  #linkServer {
-    border-radius: 3px;
-    border: 2px solid rgb(142, 164, 167);
-    width: 200px;
-    height: 50px;
-    background-color: rgb(81, 206, 255); 
-    position: absolute;
-    left: 70%;
-    top: 167px;
-  }
-
-  #linkServer:hover {
-    opacity: 0.5;
+  .cliqueAqui {
+    width: 50%;
+    height: 30%;
     transition: 0.3s;
   }
-  
-  #linkServer a {
-    width: 200px;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    font-size: 1.2em;
+
+  .cliqueAqui a {
+    width: 100%;
+    height: 100%;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    align-items: center;
-    padding-top: 12px;
+    color: black;
+    font-size: 0.9em;
   }
+
+  .cliqueAqui:hover {
+    opacity: 0.5;
+  }
+
+  .fundoClique {
+    background-color: rgb(81, 206, 255);
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+
+  .curiosidade {
+    float: left;
+    width: 25%;
+    height: 250px;
+    padding: 80px 0px 0 0;
+  }
+
+  .fundoCuriosidade {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: right;
+  }
+
+  .blocoCuriosidade {
+    box-shadow: 1px 1px 5px rgb(184, 183, 183);
+    border-radius: 3px;
+    background-color: #B5E6DF;
+    background-image: linear-gradient(to left, transparent, #559BE6);
+    width: 98%;
+    height: 100%;
+    padding: 0 0px 0 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: left;
+  }
+
+  .blocoCuriosidade a { 
+    text-decoration: none;
+  }
+
+  .curiTitulo {
+    padding: 0 10px 0 10px;
+    color: white;
+    font-size: 0.8em;
+  }
+
+  .curiTexto {
+    padding: 0 10px 0 10px;
+    color: white;
+    font-size: 0.9em;
+  }
+
 
   #botaoMenu {
     display: none;
@@ -219,120 +242,73 @@ body {
     visibility: hidden;
   }
 
-@media screen and (max-width: 1215px) {
-  #linkServer {
-    position: absolute;
-    left: 75%;
-  }
-
-  #tituloServer  {
-    position: absolute;
-    left: 30%;
-  }
-
-  #textoServer {
-    position: absolute;
-    left: 30%;
+  #menuDentro {
+    display: none;
   }
 
 
-}
 
-@media screen and (max-width: 1200px) {
-  #linkServer {
-    position: absolute;
-    left: 73%;
+
+@media screen and (max-width: 1150px) {
+  .exFoto {
+    width: 30%;
   }
-}
-
-@media screen and (max-width: 1160px) {
-  #linkServer {
-    width: 150px;
-    height: 40px;
-    top: 175px;
-  }
-
-  #linkServer a {
-    width: 150px;
-    height: 40px;
-    position: absolute;
-    top: 0;
-    font-size: 1.0em;
-  }
-
-  #textoServer {
-    width: 65%;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  #tituloServer {
-    top: 0;
-    left: 33%;
-  }
-
-  #textoServer {
-    top: 50px;
-    left: 33%;
+  .textoArtigo {
+    width: 70%;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .exFoto img {
-    position: absolute;
-    left: 30%;
-  }
+  
 
   .curiosidade {
-    width: 45%;
+    width: 50%;
+    height: 250px;
   }
 
-  #linkServer {
-   
-    top: 430px;
-    left: 65%;
-  }
-
-  .bloco {
-    background-color: white;
-    padding: 20px;
-    border-radius: 3px;
-    height: 450px;
-    box-shadow: 1px 1px 5px rgb(184, 183, 183);
+  .gradeArtigo {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   .exArtigo {
     float: left;
     width: 50%;
-    position: absolute;
-    top: 130px;
+    height: 600px;
   }
 
-  #tituloServer {
-    top: 240px;
-    left: 35%;
+  .exFoto {
+    width: 100%;
+    align-items: none;
   }
 
-  #textoServer {
-    top: 300px;
-    width: 80%;
-    left: 10%;
+  .textoArtigo {
+    width: 100%;
+    justify-items: center;
   }
+
+  .textoServer p {
+    padding: 0 10px 0 30px;
+  }
+
+
 
   #menuTopoAuto {
-    width: 100%;
-    height: 100%;
+    width: 60%;
     background-color: white;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 119px 0px 119px 0px;
-    border-bottom: 1px solid black;
+    padding: 0px 0px 0px 0px;
+    border-bottom: 1px solid rgb(131, 129, 129);
+    border-right: 1px solid rgb(131, 129, 129);
+
   }
 
   #menuDentro {
     display: grid;
-    height: 320px; 
+    height: 250px; 
   }
 
   #menuDentro a {
@@ -342,7 +318,7 @@ body {
     text-decoration: none;
     color: rgb(81, 206, 255);
     font-size: 30px;
-    padding: 60px 0 0 0;
+    padding: 45px 0 0 0;
     user-select: none;
     cursor: pointer;
   }
@@ -406,71 +382,19 @@ body {
   }
 }
 
-@media screen and (max-width: 950px) {
-  #linkServer {
-    left: 60%;
-  }
-
-  .exFoto img {
-    left: 25%;
-  }
-
-  #tituloServer {
-    left: 30%;
-  }
-}
 
 @media screen and (max-width: 800px) {
-  .exFoto img {
-    position: absolute;
-    left: 29%;
-  }
-
-  #tituloServer {
-    left: 35%;
-  }
-
   .exArtigo {
     width: 60%;
-    
   }
 
   .curiosidade {
-    width: 35%;
+    width: 40%;
   }
 }
 
 @media screen and (max-width: 730px) {
-  #linkServer {
-    left: 55%;
-  }
-  .exFoto img {
-    position: absolute;
-    left: 24%;
-  }
 
-  #tituloServer {
-    left: 30%;
-  }
-
-  .perfilDireito {
-  width: 96%;
-  height: 600px;
-  
-  }
-
-  #foto {
-  align-items: center;
-  position: absolute;
-  left: 25%;
-  }
-
-  #apresentacao {
-    width: 90%;
-    position: absolute;
-    top: 350px;
-    left: 5%;
-  }
 
   #entreEmContato { 
   position: absolute;
@@ -481,168 +405,63 @@ body {
 
 @media screen and (max-width: 660px) {
  
+  
   .redesSociais {
     display: none;
   }
 
   #redesAdap {
-    width: 20%;
+    width: 100%;
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    position: absolute;
-    top: 30px;
-    right: 51%;
+    justify-items: center;
     user-select: none;
     cursor: pointer;
     visibility: visible;
   }
 
-  #redesAdap a {
-    padding: 0 10px 0 10px;
+  #menuTopoAuto {
+    padding: 50px 0px 0px 0px;
   }
+
+  .blocoCuriosidade {
+    width: 100%;
+  }
+
+  
 
   #entreEmContato {
     position: absolute;
     left: 35%;
   }
 
-  #foto {
-    position: absolute;
-    left: 20%;
-  }
-
-}
-
-@media screen and (max-width: 640px) {
   .exArtigo {
-    width: 99.5%;
-    position: static;
-    padding: 100px 0 0 0;
-  }
-
-  .exFoto img {
-    left: 34%;
-  }
-
-  #tituloServer {
-    position: absolute;
-    top: 350px;
-    left: 39%;
-  }
-
-  #textoServer {
-    padding: 120px 0 0 0;
-  }
-
-  #linkServer {
-    top: 550px;
-    left: 63%;
+    width: 100%;
   }
 
   .curiosidade {
-    position: static;
-    padding: 20px 0px 0 0px;
-    width: 99.5%;
+    width: 100%;
+    padding: 10px 0 0 0;
   }
 
-  .curiosidade a {
-    text-decoration: none;
-  }
-
-  .curiTitulo {
-    position: static;
-    width: 85%;
-    text-decoration: none;
-  }
-
-  .curiTexto {
-    position: static;
-    bottom: 30px;
-    left: 20px;
-    width: 85%;
-    text-decoration: none;
-    padding: 50px 0 0 0;
-  }
 }
 
 @media screen and (max-width: 550px) {
-  .exFoto img {
-    left: 31%;
+  p {
+    font-size: 0.9em;
   }
+   h2 {
+     font-size: 1.3em
+   }
 
-  #tituloServer {
-    position: absolute;
-    top: 350px;
-    left: 37%;
-  }
 }
 
-@media screen and (max-width: 500px) {
-  .exFoto img {
-    left: 29%;
-  }
-
-  #tituloServer {
-    position: absolute;
-    top: 350px;
-    left: 35%;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .exFoto img {
-    left: 27%;
-  }
-
-  #tituloServer {
-    position: absolute;
-    top: 350px;
-    left: 33%;
-  }
-
-  #textoServer {
-    width: 85%;
-  }
-
-  #linkServer {
-    top: 550px;
-    left: 60%;
-  }
-}
 
 @media screen and (max-width: 415px) {
 
-  #blocoCuriosidade {
-    height: 240px;
-  }
-
-  .curiTitulo {
-    width: 90%;
-  }
-
-  .exFoto img {
-    left: 25%;
-  }
-
-  #tituloServer {
-    position: absolute;
-    left: 31%;
-  }
-
-  #textoServer {
-    width: 86%;
-    top: 305px;
-    left: 10%;
-  }
-
-  #linkServer {
-    top: 600px;
-    left: 55%;
-  }
-
-  .bloco {
-    height: 500px;
+  .exArtigo {
+    padding: 70px 0 0 0;
   }
 
   #botaoMenu img {
@@ -657,55 +476,19 @@ body {
 
   #entreEmContato a {
     font-size: 0.8em;
-    position: absolute;
-    top: 7px;
-    left: 12px;
-    
   }
 
   .fundoTopo {
     height: 90px;
   }
 
-
+  .textoServer p {
+    padding: 0 10px 0 40px;
+  }
 }
 
-@media screen and (max-width: 400px) {
-  .exFoto img {
-    left: 23%;
+@media screen and (max-width: 325px) {
+  .exArtigo {
+    height: 550px;
   }
-
-  #tituloServer {
-    position: absolute;
-    left: 30%;
-  }
-
-  #linkServer {
-    top: 600px;
-    left: 50%;
-  }
-
-  #textoServer {
-    width: 86%;
-    top: 305px;
-    left: 7%;
-  }
-
-}
-
-@media screen and (max-width: 340px) {
-  .exFoto img {
-    left: 21%;
-  }
-
-  #tituloServer {
-    position: absolute;
-    left: 28%;
-  }
-
-  #linkServer {
-    top: 600px;
-    left: 45%;
-  }
-
 }
