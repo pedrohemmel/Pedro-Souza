@@ -48,17 +48,17 @@ p {
 }
 
 .menuVisivel {
-  margin-top: 0;
-  transition: margin-top 1s;
+  margin-left: 0;
+  transition: margin-left 1s;
 }
 
 .menuInicio {
-  margin-top: -200%;
+  margin-left: -100%;
 }
 
 .menuInvisivel {
-  margin-top: -200%;
-  transition: margin-top 1s;
+  margin-left: -100%;
+  transition: margin-left 1s;
 }
 
 .fundoTopo {
@@ -139,13 +139,14 @@ p {
   }
 
   #menuTopoAuto {
-    width: 100%;
+    width: 60%;
     background-color: white;
     position: absolute;
     top: 0;
     left: 0;
     padding: 0px 0px 0px 0px;
     border-bottom: 1px solid rgb(131, 129, 129);
+    border-right: 1px solid rgb(131, 129, 129);
   }
 
   #menuDentro {
@@ -303,7 +304,3 @@ p {
 
 
 }
-
-
-
-

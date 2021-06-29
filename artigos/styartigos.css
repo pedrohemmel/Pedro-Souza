@@ -5,17 +5,17 @@ body {
 }
 
 .menuVisivel {
-  margin-top: 0;
-  transition: margin-top 1s;
+  margin-left: 0;
+  transition: margin-left 1s;
 }
 
 .menuInicio {
-  margin-top: -200%;
+  margin-left: -100%;
 }
 
 .menuInvisivel {
-  margin-top: -200%;
-  transition: margin-top 1s;
+  margin-left: -100%;
+  transition: margin-left 1s;
 }
 
 .fundoTopo {
@@ -30,6 +30,7 @@ body {
 }
 
 #menuTopo  {
+  width: 40%;
   height: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
@@ -107,6 +108,7 @@ body {
   .exArtigo {
     float: left;
     width: 75%;
+    height: 270px;
     padding: 80px 0 0 0;
   }
 
@@ -163,7 +165,6 @@ body {
     width: 50%;
     height: 30%;
     transition: 0.3s;
-    padding: 0 0 10px 0;
   }
 
   .cliqueAqui a {
@@ -191,7 +192,7 @@ body {
   .curiosidade {
     float: left;
     width: 25%;
-    height: 200px;
+    height: 270px;
     padding: 80px 0px 0 0;
   }
 
@@ -258,10 +259,6 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-
-    #espacoJogoVelha {
-    padding: 0 0 0 10px;
-  }
   
 
   .curiosidade {
@@ -278,12 +275,12 @@ body {
   .exArtigo {
     float: left;
     width: 50%;
+    height: 600px;
   }
 
   .exFoto {
     width: 100%;
     align-items: none;
-    padding: 10px 0 0 0;
   }
 
   .textoArtigo {
@@ -298,13 +295,15 @@ body {
 
 
   #menuTopoAuto {
-    width: 100%;
+    width: 60%;
     background-color: white;
     position: absolute;
     top: 0;
     left: 0;
     padding: 0px 0px 0px 0px;
     border-bottom: 1px solid rgb(131, 129, 129);
+    border-right: 1px solid rgb(131, 129, 129);
+
   }
 
   #menuDentro {
@@ -385,9 +384,6 @@ body {
 
 
 @media screen and (max-width: 800px) {
-   #espacoJogoVelha {
-    padding: 0 0 0 0px;
-  }
   .exArtigo {
     width: 60%;
   }
@@ -491,3 +487,8 @@ body {
   }
 }
 
+@media screen and (max-width: 325px) {
+  .exArtigo {
+    height: 550px;
+  }
+}
