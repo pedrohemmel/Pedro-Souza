@@ -3,7 +3,7 @@ body {
     padding: 0;
     background: url('images/fotoCode.jpg');
     background-attachment: fixed;
-    background-size: 250%;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,10 +267,6 @@ body {
     width: 50%;
   }
 
-  body {
-    background-size: 300%;
-    background-attachment: fixed;
-  }
 }
 
 @media screen and (max-width: 700px) {
@@ -317,8 +313,7 @@ body {
 
   body {
   font-size: 0.6em;
-  background-size: 600%;
-  background-attachment: fixed;
+
 }
 }
 
