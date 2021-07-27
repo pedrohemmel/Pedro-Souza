@@ -4,7 +4,7 @@ body {
     background: url('images/fotoCode.jpg');
     background-attachment: scroll;
     background-attachment: fixed;
-    background-size: cover;
+    height: 100vh;
     background-position-x: center;
     display: flex;
     justify-content: center;
