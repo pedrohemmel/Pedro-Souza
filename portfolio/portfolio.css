@@ -314,7 +314,7 @@ body {
 
   body {
   font-size: 0.6em;
-
+  background-attachment: fixed;
 }
 }
 
@@ -351,12 +351,19 @@ body {
   .fundoImagemNoticias h2 {
     font-size: 3em;
   }
+
+  body {
+    background-attachment: fixed;
+  }
 }
 
 @media screen and (max-width: 440px) {
   .imgProjeto img {
     width: 100px;
     height: 100px;
+  }
+  body {
+    background-attachment: fixed;
   }
 }
 
