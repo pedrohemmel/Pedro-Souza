@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     background: url('images/fotoCode.jpg');
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 250%;
     display: flex;
