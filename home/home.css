@@ -3,7 +3,7 @@ body {
   font-family: sans-serif;
   background: url('images/fotoCode.jpg');
     background-attachment: fixed;
-    background-size: 250%;
+    background-size: cover;
 }
 
 
@@ -207,8 +207,7 @@ body {
 
   body {
   font-size: 0.6em;
-  background-size: 600%;
-  background-attachment: fixed;
+  
 }
 
 }
@@ -230,7 +229,6 @@ body {
 @media screen and (max-width: 350px) {
     body {
   font-size: 0.5em;
-  background-attachment: fixed;
   }
   .divFotoApresentacao img {
     width: 150px;
