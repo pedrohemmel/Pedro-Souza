@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-family: sans-serif;
   background: url('images/fotoCode.jpg');
-  background-attachment: scroll;
   background-attachment: fixed;
   background-position-x: center;
   background-size: cover;
