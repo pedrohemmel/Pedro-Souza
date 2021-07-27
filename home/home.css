@@ -4,8 +4,6 @@ body {
   background: url('images/fotoCode.jpg');
   background-attachment: scroll;
   background-attachment: fixed;
-  background-attachment: local;
-  background-attachment: inherit;
   background-position-x: center;
   background-size: cover;
 }
