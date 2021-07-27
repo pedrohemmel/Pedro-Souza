@@ -2,8 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background: url('images/fotoCode.jpg')  center center no-repeat fixed;
-    background-size: 200%;
-    background-repeat: no-repeat;
+    background-size: 250%;
     display: flex;
     justify-content: center;
     align-items: center;
