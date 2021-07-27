@@ -2,7 +2,10 @@ body {
     margin: 0;
     padding: 0;
     background: url('images/fotoCode.jpg');
+    background-attachment: scroll;
     background-attachment: fixed;
+    background-attachment: local;
+    background-attachment: inherit;
     background-size: cover;
     background-position-x: center;
     display: flex;
