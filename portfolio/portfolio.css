@@ -269,6 +269,7 @@ body {
 
   body {
     background-size: 300%;
+    background-attachment: fixed;
   }
 }
 
@@ -317,6 +318,7 @@ body {
   body {
   font-size: 0.6em;
   background-size: 600%;
+  background-attachment: fixed;
 }
 }
 
