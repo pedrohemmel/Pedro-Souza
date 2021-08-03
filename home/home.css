@@ -226,7 +226,7 @@ body {
   body {
     background-image: url('images/fundoRepeat.jpg');
     background-repeat: repeat;
-    background-attachment:initial;
+    background-attachment:unset;
     background-size: 100%;
   }
 }
