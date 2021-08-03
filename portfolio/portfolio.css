@@ -394,8 +394,10 @@ body {
   }
 
   body {
-    background-color:rgb(81, 206, 255);
-    background-image: none;
+    background-image: url('images/fundoRepeat.jpg');
+    background-repeat: repeat;
+    background-attachment:initial;
+    background-size: 100%;
   }
 }
 

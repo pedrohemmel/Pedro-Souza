@@ -219,10 +219,16 @@ body {
   width: 80%;
   padding: 5vh 0 10vh 10%;
 }
+}
 
 
-
-
+@media screen and (max-width: 500px) {
+  body {
+    background-image: url('images/fundoRepeat.jpg');
+    background-repeat: repeat;
+    background-attachment:initial;
+    background-size: 100%;
+  }
 }
 
 
