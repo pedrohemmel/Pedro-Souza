@@ -224,7 +224,7 @@ body {
 
 @media screen and (max-width: 500px) {
   body {
-    background-image: url('images/fundoRepeat.jpg');
+    background-image: url('images/fundoRepeat.png');
     background-repeat: repeat;
     background-attachment:unset;
     background-size: 100%;
