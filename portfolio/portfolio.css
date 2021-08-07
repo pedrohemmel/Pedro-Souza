@@ -153,6 +153,7 @@ body {
 
 .apresentacaoDoProjeto a {
   padding: 8px;
+  margin-top: 10px;
   border-radius: 10px;
   background-color: rgba(81, 206, 255, 0.7);
   text-decoration: none;
