@@ -1,38 +1,136 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Home</title>
-    <link href="home/home.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="home/images/minhaFoto.png" />
-  </head>
-  <body>
-      <nav class="redesSociais">
-        <a target="_blank" class="instagram" href="https://www.instagram.com/pedro_hemmel/"><img src="home/images/instagram.png"></a>
-        <a target="_blank" class="facebook" href="https://www.facebook.com/pedrohenrique.hemmel"><img src="home/images/facebook.png"></a>
-        <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/ptarget="_blank" edro-henrique-dias-hemmel-de-oliveira-souza-90a5261b3/"><img src="home/images/linkedin.png"></a>
-        <a target="_blank" class="email" href="mailto:phenrique_h2016@hotmail.com"><img src="home/images/email.png"></a>
-      </nav>
-        <header class="navegacaoTopo">
-          <nav class="menuNavegacaoTopo">
-            <a href="">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-          </nav>
-        </header>
-        <section class="meuPerfil">
-          <article class="fundoMeuPerfil">
-            <header class="divFotoApresentacao">
-              <img width="200px" height="200px" class="fotoApresentacao" src="home/images/minhaFoto.png">
-            </header>
-            <main class="apresentacao">
-                <h2>Olá, conheça mais sobre mim!</h2>
-                <p style="text-align: justify; font-size: 1.2em;">
-                  Meu nome é Pedro Henrique e tenho 18 anos, atualmente estou cursando Ciências da Computação e Técnico em Informática. Para poder apresentar meus projetos para o mercado de trabalho, e ao mesmo tempo ajudar pessoas com informações sobre tecnologia, eu criei este blog. Aqui vou postar artigos dos meus conhecimentos adquiridos durante minhas formações.
-                  Obrigado por acessar e sinta-se a vontade para navegar pelo meu blog.
-                </p>
-            </main>
-          </article>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro_Hemmel</title>
+    <!--CSS BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <!--ICONS BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body class="bg-color-default">
+  <!--HEADER-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark " id="menuPag">
+        <div class="container-fluid">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="navbar-brand nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/bandeiraBrasil.jpg" alt="bandeira brasileira">
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a onclick="voltaIdioma()" onclick="mudaIdioma()" class="dropdown-item" href="#">
+                    <img id="alocadorDeBandeira" src="images/bandeiraAmerica.jpg" alt="bandeira americana">
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link nav-menu" id="sobreMimHeader" href="#quemSou">Sobre Mim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-menu" id="entreEmContatoHeader" href="#rodape">Entre em Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  </header>
+  <!--HEADER-->
+  <!--APRESENTACAO-->
+  <section class="container" id="apresentacao">
+    <article class="row">
+      <div class="col-12 col-md-6" id="textoApresentacao">
+        <div>
+          <p id="apresentacaoText1">Olá, meu nome é </p>
+          <h1 id="apresentacaoText2">Pedro Henrique</h1>
+          <p id="apresentacaoText3">e esse é o website pessoal que eu crie para mostrar minhas habilidades e conhecimentos</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6" id="fotoApresentacao">
+        <img src="images/minhaFoto.jpg" alt="minha foto pessoal">
+      </div>
+    </article>
+  </section>
+  <!--APRESENTACAO-->
+  <!--QUEM SOU-->
+  <section class="padding-secao container-fluid bg-color-secondary" id="quemSou">
+    <article class="row container">
+      <div class="col-12 col-md-6" id="fotoQuemSou">
+        <img width="100%;" src="images/macSansung.png" alt="foto ilustrativa">
+      </div>
+      <div class="col-12 col-md-6" id="textoQuemSou">
+        <div>
+          <p id="quemSouText1">Então, afinal..</p>
+          <h1 id="quemSouText2">O que eu sou?</h1>
+          <p id="quemSouText3"><i>"Sou estudante de Ciência da Computação e Técnico em Informática com o foco em desenvolvimento de sistemas e novas tecnologias"</i></p>
+        </div>
+     </div>
+    </article>
+  </section>
+  <!--QUEM SOU-->
+  <!--MEUS PROJETOS-->
+  <section class="container padding-secao" id="meusProjetos">
+    <h1 id="meusProjetosText">Meus Projetos</h1>
+    <div class="row">
+      <article class="col-12 col-md-6">
+        <section class="blocoProjeto" id="jogoCobrinha">
+          <div>
+            <a id="projeto1" href="https://pedrohemmel.github.io/jogoCobrinha/">Jogo da Cobrinha</a>
+          </div>  
         </section>
-  </body>
+      </article>
+      <article class="col-12 col-md-6">
+        <section class="blocoProjeto" id="jogoVelha">
+          <div>
+            <a id="projeto2" href="https://pedrohemmel.github.io/jogoVelha/">Jogo da Velha</a>
+          </div>
+        </section>
+      </article>
+      <article class="col-12 col-md-6">
+        <section class="blocoProjeto" id="servidores">
+          <div>
+            <a id="projeto3" href="https://pedrohemmel.github.io/servidores/">Servidores</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </section>
+  <!--MEUS PROJETOS-->
+  <!--FOOTER-->
+  <footer class="padding-secao container-fluid bg-color-tertiary" id="rodape">
+    <article class="container row">
+      <div class="col-12 col-md-6">
+        <div class="contatoRodape">
+          <h4 id="entreEmContatoFooter">Entre em contato</h4>
+          <div class="iconesContato">
+            <a href="https://www.linkedin.com/in/pedro-henrique-dias-hemmel-de-oliveira-souza-90a5261b3/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/pedrohenrique.hemmel"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/pedro_hemmel/"><i class="bi bi-instagram"></i></a>
+          </div>
+          <hr>
+          <a href="mailto:phenrique_h2016@hotmail.com">phenrique_h2016@hotmail.com</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <p class="fraseMotivacional">It's a long way to the top if you wanna rock 'n' roll</p>
+      </div>
+    </article>
+    <hr style="margin-top: 2em;">
+    <p style="margin: 0;font-size: 0.8em; text-align: center;"><i>@ Pedro Henrique Dias Hemmel de Oliveira Souza 2021 | <span id="direitos">Todos direitos reservados</span></i></p>
+  </footer>
+  <!--FOOTER-->
+  <script src="js/script.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
 </html>

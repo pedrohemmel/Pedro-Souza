@@ -1,0 +1,325 @@
+/*0f0f0c*/
+
+:root {
+    --pretoPadrao: #0a0a0a;
+    --pretoSecundario: #332f2e;
+    --pretoTerciario: #3D4D42;
+}
+
+/*---------- CLASSES MUNDIAIS -----------*/
+
+
+p {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+
+    color: #fff;
+
+    transition: 0.3s;
+}
+
+.texto-justificado {
+    text-align: justify;
+}
+
+.texto-centralizado {
+    text-align: center;
+}
+
+.margin-secao {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.padding-secao {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.bg-color-default {
+    background-color: var(--pretoPadrao);
+}
+
+.bg-color-secondary {
+    background-color: var(--pretoSecundario);
+}
+
+.bg-color-tertiary {
+    background-color: var(--pretoTerciario);
+}
+/*---------- CLASSES MUNDIAIS -----------*/
+
+
+/*--------- HEADER -------------*/
+/*---------- NAVBAR -----------*/
+
+.dropdown-menu  {
+    background-color: #000;
+    width: 75px;
+    margin: 0;
+    
+}
+
+.dropdown-item:hover {
+    background-color: #000;
+}
+
+#menuPag .nav-menu {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    padding: 4px 8px;;
+
+    color: #fff;
+
+    transition: 0.5s;
+
+    text-align: center;
+
+    border-bottom: 1px solid #fff;
+}
+
+@media screen and (min-width: 768px) {
+    #menuPag .nav-menu {
+        border: none;
+        border-radius: 20px;
+    }
+}
+
+#menuPag .nav-menu:hover {
+    background-color: #30332E;
+}
+
+/*--------- HEADER -------------*/
+
+/*--------- BODY -------------*/
+
+/*--------- APRESENTACAO -------------*/
+
+#apresentacao {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+#textoApresentacao p,
+#textoApresentacao h1 {
+    color: #fff;
+    
+    margin: 0 0;
+}
+
+#textoApresentacao h1 {
+    font-size: 2em;
+
+    text-transform: uppercase;
+}
+
+
+
+#textoApresentacao  {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+@media screen and (min-width: 450px) {
+    #textoApresentacao h1 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #textoApresentacao h1 {
+        font-size: 3.5em;
+    }
+    #textoApresentacao  {
+        text-align:start;
+    }
+}
+
+#fotoApresentacao img {
+    width: 100%;
+}
+
+/*--------- APRESENTACAO -------------*/
+
+/*--------- QUEM SOU -------------*/
+
+#quemSou .container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#textoQuemSou h1 {
+    margin-bottom: 50px;
+
+    font-size: 2em;
+
+    text-transform: uppercase;
+}
+
+#textoQuemSou p {
+    margin: 0;
+}
+
+#textoQuemSou h1,
+#textoQuemSou p {
+    color: #fff;
+
+   text-align: center;
+}
+
+#textoQuemSou {
+    margin-top: 2em;
+    
+}
+
+#textoQuemSou,
+#fotoQuemSou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 450px) {
+    #textoQuemSou h1 {
+        font-size: 3em;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    #textoQuemSou {
+        margin-top: 0;
+    }
+
+    #textoQuemSou h1,
+    #textoQuemSou p {
+    color: #fff;
+
+    text-align: end;
+    }
+}
+
+/*--------- QUEM SOU -------------*/
+
+/*--------- Meus projetos ----------*/
+
+#meusProjetos h1,
+#meusProjetos h4 {
+    color: #fff;
+
+    transition: 0.3s;
+}
+
+#meusProjetos a {
+    font-size: 1.4em;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+#meusProjetos a:hover {
+    font-size: 1.6em;
+    color: #fff;
+}
+
+
+
+#meusProjetos h1 {
+    margin-bottom: 2em;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.col-12,
+.col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocoProjeto {
+    width: 471px;
+    height: 471px;
+
+    border-radius: 3px;
+
+    margin-bottom: 2em;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+#jogoCobrinha {
+    background-image: url('images/jogoCobrinha.jpg');
+    background-position:center;
+}
+
+#jogoVelha {
+    background-image: url('images/fotoJogoDaVelha.jpg');
+    background-position:center;
+}
+
+#servidores {
+    background-image: url('images/fotoServidores.jpg');
+    margin: 0;
+    background-position:center;
+}
+
+
+/*--------- Meus projetos ----------*/
+
+/*--------- RODAPE ----------*/
+    #rodape h4 {
+        color: #fff;
+        
+        margin-bottom: 1em;
+    }
+
+    #rodape p {
+        color: #fff;
+    }
+
+    #rodape {
+        padding-bottom: 1em;
+    }
+
+    #rodape .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #rodape a:hover {
+        color: #00a0aa;
+    }
+
+    .iconesContato i {
+        font-size: 25px;
+    }
+
+    .iconesContato {
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+    }
+
+    .fraseMotivacional {
+        margin-top: 2em;
+    }
+/*--------- RODAPE ----------*/
+
+/*--------- BODY -------------*/
+
+
