@@ -327,10 +327,10 @@ a {
     }
 
     .contatoRodape {
-        width: 60%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
-        
+
     }
 
     .iconesContato i {
@@ -353,6 +353,12 @@ a {
         font-size: 1em;
     }
 
+    @media screen and (min-width: 450px) {
+        .contatoRodape {
+            width: 60%;
+    
+        }
+    }
 
     @media screen and (min-width: 768px) {
         .fraseMotivacional {
