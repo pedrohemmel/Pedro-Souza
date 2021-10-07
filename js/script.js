@@ -7,20 +7,20 @@ let ativado = false;
 
 function mudaIdioma() {
     console.log("oi");
-    let sobreMimHeader = document.getElementById('sobreMimHeader').innerHTML = 'About me';
+    let sobreMimHeader = document.getElementById('sobreMimHeader').innerHTML = 'Projects';
     let entreEmContatoHeader = document.getElementById('entreEmContatoHeader').innerHTML = 'Contact me';
     let apresentacaoText1 = document.getElementById('apresentacaoText1').innerHTML = 'Hi, my name is';
-    let apresentacaoText3 = document.getElementById('apresentacaoText3').innerHTML = 'and this is my personal website that i made to show my projects and skills';
-    let quemSouText1 = document.getElementById('quemSouText1').innerHTML = 'So, after all..';
-    let quemSouText2 = document.getElementById('quemSouText2').innerHTML = 'What am i?';
-    let quemSouText3 = document.getElementById('quemSouText3').innerHTML = '“I am student of Science Computing and Computer Technician focusing in the development of systems and new technologies.”';
+    let apresentacaoText3 = document.getElementById('apresentacaoText3').innerHTML = 'Front-end Developer | Database Analyst';
     let meusProjetosText = document.getElementById('meusProjetosText').innerHTML = 'My Projects';
     let projeto1 = document.getElementById('projeto1').innerHTML = 'Snake Game';
+    let cat1 = document.getElementById('cat1').innerHTML = 'Game';
     let projeto2 = document.getElementById('projeto2').innerHTML = 'Tic-tac-toe';
+    let cat2 = document.getElementById('cat2').innerHTML = 'Game';
     let projeto3 = document.getElementById('projeto3').innerHTML = 'Servers';
+    let cat3 = document.getElementById('cat3').innerHTML = 'Article';
     let entreEmContatoFooter = document.getElementById('entreEmContatoFooter').innerHTML = 'Contact me';
     let direitos = document.getElementById('direitos').innerHTML = 'All rights reserved';
-    let alocadorDeBandeira = document.getElementById('alocadorDeBandeira').src = 'images/bandeiraBrasil.jpg';
+    let alocadorLinguagem = document.getElementById('alocadorLinguagem').innerHTML = 'Português - PT-BR';
 
     ativado = true;
 }

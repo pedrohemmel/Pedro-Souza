@@ -1,12 +1,16 @@
 /*0f0f0c*/
 
 :root {
-    --pretoPadrao: #0a0a0a;
-    --pretoSecundario: #332f2e;
-    --pretoTerciario: #3D4D42;
+    --pretoPadrao: #0a0b0c;
+    --pretoSecundario: #2D6673;
+    --pretoTerciario: #2D6673;
 }
 
 /*---------- CLASSES MUNDIAIS -----------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
 
 p {
@@ -56,11 +60,26 @@ a {
 /*--------- HEADER -------------*/
 /*---------- NAVBAR -----------*/
 
+#menuPag {
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/backgroundBorboleta.jpg');
+    background-size:auto;
+    height: 700px;
+}
+
+#navbarDropdown {
+    padding-top: 0;
+}
+
 .dropdown-menu  {
     background-color: #000;
     width: 75px;
     margin: 0;
-    
+}
+
+.dropdown-menu a {
+    color: #fff;
 }
 
 .dropdown-item:hover {
@@ -82,16 +101,29 @@ a {
     border-bottom: 1px solid #fff;
 }
 
+
 @media screen and (min-width: 768px) {
     #menuPag .nav-menu {
         border: none;
         border-radius: 20px;
     }
+
+    #menuPag .nav-menu a:hover {
+        border-bottom: 1px solid #fff;
+    }
+    
+
+    
 }
 
-#menuPag .nav-menu:hover {
-    background-color: #30332E;
+@media screen and (min-width: 1200px) {
+    #menuPag {
+
+        background-size: 100%;
+
+    }
 }
+
 
 /*--------- HEADER -------------*/
 
@@ -100,115 +132,39 @@ a {
 /*--------- APRESENTACAO -------------*/
 
 #apresentacao {
-    margin-top: 1em;
-    margin-bottom: 3em;
-}
-
-#textoApresentacao p,
-#textoApresentacao h1 {
+    width: 100%;
     color: #fff;
-    
-    margin: 0 0;
-}
 
-#textoApresentacao h1 {
-    font-size: 2em;
-
-    text-transform: uppercase;
-}
-
-
-
-#textoApresentacao  {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    margin-bottom: 2em;
     text-align: center;
+
+    margin: auto auto;
 }
 
-@media screen and (min-width: 450px) {
-    #textoApresentacao h1 {
-        font-size: 3em;
-    }
+#apresentacao h1 {
+    font-size: 3em;
+    font-weight: 900;
+}
+
+#apresentacao p {
+    padding: 5px 10px;
 }
 
 @media screen and (min-width: 768px) {
-    #textoApresentacao h1 {
-        font-size: 3.5em;
-    }
-    #textoApresentacao  {
-        text-align:start;
+    #apresentacao h1 {
+        font-size: 4em;
+        
     }
 }
 
-#fotoApresentacao img {
-    width: 100%;
-}
 
 /*--------- APRESENTACAO -------------*/
 
-/*--------- QUEM SOU -------------*/
-
-#quemSou .container {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#textoQuemSou h1 {
-    margin-bottom: 50px;
-
-    font-size: 2em;
-
-    text-transform: uppercase;
-}
-
-#textoQuemSou p {
-    margin: 0;
-}
-
-#textoQuemSou h1,
-#textoQuemSou p {
-    color: #fff;
-
-   text-align: center;
-}
-
-#textoQuemSou {
-    margin-top: 2em;
-    
-}
-
-#textoQuemSou,
-#fotoQuemSou {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media screen and (min-width: 450px) {
-    #textoQuemSou h1 {
-        font-size: 3em;
-    }
-    
-}
-
-@media screen and (min-width: 768px) {
-    #textoQuemSou {
-        margin-top: 0;
-    }
-
-    #textoQuemSou h1,
-    #textoQuemSou p {
-    color: #fff;
-
-    text-align: end;
-    }
-}
-
-/*--------- QUEM SOU -------------*/
-
 /*--------- Meus projetos ----------*/
+
+#meusProjetos {
+    margin-bottom: 4em;
+    margin-top: 3em;
+}
 
 #meusProjetos h1,
 #meusProjetos h4 {
@@ -229,52 +185,114 @@ a {
     color: #fff;
 }
 
-
+#meusProjetos .container {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #meusProjetos h1 {
     margin-bottom: 2em;
+
+    font-weight: 600;
 
     text-align: center;
     text-transform: uppercase;
 }
 
-.col-12,
-.col-md-6 {
+
+#meusProjetos .col-12,
+#meusProjetos .col-md-4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .blocoProjeto {
-    width: 471px;
-    height: 471px;
+    width: 100%;
+    height:300px;
 
     border-radius: 3px;
 
-    margin-bottom: 2em;
-
     display: flex;
+
+    padding: 0;
 
     justify-content: center;
     align-items: center;
 }
 
+.blocoProjeto p {
+    text-align: center;
+    
+    color: #fff;
+
+    font-weight: 200;
+    font-size: 1em;
+}
 
 #jogoCobrinha {
     background-image: url('images/jogoCobrinha.jpg');
     background-position:center;
+    background-size: 100%;
 }
 
 #jogoVelha {
     background-image: url('images/fotoJogoDaVelha.jpg');
     background-position:center;
+    background-size: 100%;
 }
 
 #servidores {
     background-image: url('images/fotoServidores.jpg');
     margin: 0;
     background-position:center;
+    background-size: 100%;
 }
+
+@media screen and (min-width: 768px) {
+    .blocoProjeto {
+        width: 300px;
+        height: 300px;
+    }
+
+    #jogoCobrinha {
+        background-size: auto;
+    
+    }
+    
+    #jogoVelha {
+        background-size: auto;
+    }
+    
+    #servidores {
+        background-size: auto;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #jogoCobrinha {
+        background-image: url('images/jogoCobrinha.jpg');
+        background-position:center;
+        background-size: 120%;
+    }
+    
+    #jogoVelha {
+        background-image: url('images/fotoJogoDaVelha.jpg');
+        background-position:center;
+        background-size: 120%;
+    }
+    
+    #servidores {
+        background-image: url('images/fotoServidores.jpg');
+        margin: 0;
+        background-position:center;
+        background-size: 120%;
+    }
+}
+
+
+
 
 
 /*--------- Meus projetos ----------*/
@@ -284,10 +302,14 @@ a {
         color: #fff;
         
         margin-bottom: 1em;
+
+        text-align: center;
     }
 
-    #rodape p {
+    #rodape p,
+    #rodape hr {
         color: #fff;
+        text-align: center;
     }
 
     #rodape {
@@ -297,10 +319,18 @@ a {
     #rodape .container {
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
 
     #rodape a:hover {
-        color: #00a0aa;
+        color: var(--pretoPadrao);
+    }
+
+    .contatoRodape {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
 
     .iconesContato i {
@@ -312,11 +342,22 @@ a {
 
         flex-direction: row;
 
-        justify-content: space-between;
+        justify-content: space-around;
+
+  
+    
     }
 
     .fraseMotivacional {
         margin-top: 2em;
+        font-size: 1em;
+    }
+
+
+    @media screen and (min-width: 768px) {
+        .fraseMotivacional {
+            text-align: center;
+        }
     }
 /*--------- RODAPE ----------*/
 

@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="style/style.css">
     <!--ICONS BOOTSTRAP-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-</head>
-<body class="bg-color-default">
+    <!--FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Source+Sans+Pro:wght@300;600;700;900&display=swap" rel="stylesheet"><body class="bg-color-default">
   <!--HEADER-->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark " id="menuPag">
@@ -19,12 +21,12 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="navbar-brand nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="images/bandeiraBrasil.jpg" alt="bandeira brasileira">
+                <img width="30px;" src="images/bandeiraBrasil.jpg" alt="bandeira brasileira">
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a onclick="voltaIdioma()" onclick="mudaIdioma()" class="dropdown-item" href="#">
-                    <img id="alocadorDeBandeira" src="images/bandeiraAmerica.jpg" alt="bandeira americana">
+                  <a onclick="voltaIdioma()" onclick="mudaIdioma()" class="dropdown-item" id="alocadorLinguagem" href="#">
+                    English - US
                   </a>
                 </li>
               </ul>
@@ -36,7 +38,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link nav-menu" id="sobreMimHeader" href="#quemSou">Sobre Mim</a>
+                <a class="nav-link nav-menu" id="sobreMimHeader" href="#meusProjetos">Projetos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-menu" id="entreEmContatoHeader" href="#rodape">Entre em Contato</a>
@@ -44,67 +46,48 @@
             </ul>
           </div>
         </div>
+        <!--APRESENTACAO-->
+        <div id="apresentacao">
+          <p id="apresentacaoText1">Olá, meu nome é </p>
+          <h1 id="apresentacaoText2">Pedro Henrique</h1>
+          <p id="apresentacaoText3">Desenvolvedor Front-end | Analista de Banco de Dados</p>
+        </div>
+        <!--APRESENTACAO-->
     </nav>
   </header>
   <!--HEADER-->
-  <!--APRESENTACAO-->
-  <section class="container" id="apresentacao">
-    <article class="row">
-      <div class="col-12 col-md-6" id="textoApresentacao">
-        <div>
-          <p id="apresentacaoText1">Olá, meu nome é </p>
-          <h1 id="apresentacaoText2">Pedro Henrique</h1>
-          <p id="apresentacaoText3">e esse é o website pessoal que eu crie para mostrar minhas habilidades e conhecimentos</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6" id="fotoApresentacao">
-        <img src="images/minhaFoto.jpg" alt="minha foto pessoal">
-      </div>
-    </article>
-  </section>
-  <!--APRESENTACAO-->
-  <!--QUEM SOU-->
-  <section class="padding-secao container-fluid bg-color-secondary" id="quemSou">
-    <article class="row container">
-      <div class="col-12 col-md-6" id="fotoQuemSou">
-        <img width="100%;" src="images/macSansung.png" alt="foto ilustrativa">
-      </div>
-      <div class="col-12 col-md-6" id="textoQuemSou">
-        <div>
-          <p id="quemSouText1">Então, afinal..</p>
-          <h1 id="quemSouText2">O que eu sou?</h1>
-          <p id="quemSouText3"><i>"Sou estudante de Ciência da Computação e Técnico em Informática com o foco em desenvolvimento de sistemas e novas tecnologias"</i></p>
-        </div>
-     </div>
-    </article>
-  </section>
-  <!--QUEM SOU-->
   <!--MEUS PROJETOS-->
-  <section class="container padding-secao" id="meusProjetos">
-    <h1 id="meusProjetosText">Meus Projetos</h1>
+  <section class=" bg-color-primary container-fluid padding-secao" id="meusProjetos">
+    <div class="container">
+      <h1 id="meusProjetosText">Meus Projetos</h1>
     <div class="row">
-      <article class="col-12 col-md-6">
+      <article class="col-12 col-md-4">
         <section class="blocoProjeto" id="jogoCobrinha">
-          <div>
+          <div> 
             <a id="projeto1" href="https://pedrohemmel.github.io/jogoCobrinha/">Jogo da Cobrinha</a>
+            <p id="cat1">Jogo</p>
           </div>  
         </section>
       </article>
-      <article class="col-12 col-md-6">
+      <article class="col-12 col-md-4">
         <section class="blocoProjeto" id="jogoVelha">
           <div>
             <a id="projeto2" href="https://pedrohemmel.github.io/jogoVelha/">Jogo da Velha</a>
+            <p id="cat2">Jogo</p>
           </div>
         </section>
       </article>
-      <article class="col-12 col-md-6">
+      <article class="col-12 col-md-4">
         <section class="blocoProjeto" id="servidores">
           <div>
             <a id="projeto3" href="https://pedrohemmel.github.io/servidores/">Servidores</a>
+            <p id="cat3">Artigo</p>
           </div>
         </section>
       </article>
     </div>
+    </div>
+    
   </section>
   <!--MEUS PROJETOS-->
   <!--FOOTER-->
@@ -123,7 +106,7 @@
         </div>
       </div>
       <div class="col-12 col-md-6">
-        <p class="fraseMotivacional">It's a long way to the top if you wanna rock 'n' roll</p>
+        <p class="fraseMotivacional">It's a long way to the top if you wanna Rock 'n' Roll</p>
       </div>
     </article>
     <hr style="margin-top: 2em;">
