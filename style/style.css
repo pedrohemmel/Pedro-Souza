@@ -2,7 +2,7 @@
 
 :root {
     --pretoPadrao: #0a0b0c;
-    --pretoSecundario: #2D6673;
+    --pretoSecundario: #0F2D40;
     --pretoTerciario: #2D6673;
 }
 
@@ -53,6 +53,10 @@ a {
 
 .bg-color-tertiary {
     background-color: var(--pretoTerciario);
+}
+
+.bg-color-light {
+    background-color: #fff;
 }
 /*---------- CLASSES MUNDIAIS -----------*/
 
@@ -161,138 +165,55 @@ a {
 
 /*--------- Meus projetos ----------*/
 
-#meusProjetos {
-    margin-bottom: 4em;
-    margin-top: 3em;
+#meusProjetos #blocosProjetos .col-md-4 img {
+    background-color: #000;
+    border-radius: 10px;
+
 }
 
-#meusProjetos h1,
-#meusProjetos h4 {
+#meusProjetos #blocosProjetos .col-md-4 img:hover {
+    box-shadow: 2px 2px 2px #000;
+}
+
+#meusProjetos #blocosProjetos .logoMaior {
+    margin-top: 20px;
+}  
+
+
+#meusProjetos #blocosProjetos .textoProjetos {
+    margin-top: 20px;
+}
+
+#meusProjetos #blocosProjetos .col-12 p {
+    background-color: #000;
+
     color: #fff;
 
-    transition: 0.3s;
+    padding: 15px;
+
+    border-radius: 10px;
 }
 
-#meusProjetos a {
-    font-size: 1.4em;
-    font-weight: 500;
-
-    transition: 0.3s;
-}
-
-#meusProjetos a:hover {
-    font-size: 1.6em;
+#meusProjetos #tituloProjetos {
     color: #fff;
-}
-
-#meusProjetos .container {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#meusProjetos h1 {
-    margin-bottom: 2em;
-
-    font-weight: 600;
 
     text-align: center;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#meusProjetos #tituloProjetos h3 {
     text-transform: uppercase;
-}
 
-
-#meusProjetos .col-12,
-#meusProjetos .col-md-4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.blocoProjeto {
-    width: 100%;
-    height:300px;
-
-    border-radius: 3px;
-
-    display: flex;
-
-    padding: 0;
-
-    justify-content: center;
-    align-items: center;
-}
-
-.blocoProjeto p {
-    text-align: center;
-    
-    color: #fff;
-
-    font-weight: 200;
-    font-size: 1em;
-}
-
-#jogoCobrinha {
-    background-image: url('images/jogoCobrinha.jpg');
-    background-position:center;
-    background-size: 100%;
-}
-
-#jogoVelha {
-    background-image: url('images/fotoJogoDaVelha.jpg');
-    background-position:center;
-    background-size: 100%;
-}
-
-#servidores {
-    background-image: url('images/fotoServidores.jpg');
-    margin: 0;
-    background-position:center;
-    background-size: 100%;
+    font-size: 2em;
 }
 
 @media screen and (min-width: 768px) {
-    .blocoProjeto {
-        width: 300px;
-        height: 300px;
-    }
-
-    #jogoCobrinha {
-        background-size: auto;
-    
-    }
-    
-    #jogoVelha {
-        background-size: auto;
-    }
-    
-    #servidores {
-        background-size: auto;
-    }
+    #meusProjetos #blocosProjetos .logoMaior {
+        margin-top: 0;
+    }  
 }
-
-@media screen and (max-width: 350px) {
-    #jogoCobrinha {
-        background-image: url('images/jogoCobrinha.jpg');
-        background-position:center;
-        background-size: 120%;
-    }
-    
-    #jogoVelha {
-        background-image: url('images/fotoJogoDaVelha.jpg');
-        background-position:center;
-        background-size: 120%;
-    }
-    
-    #servidores {
-        background-image: url('images/fotoServidores.jpg');
-        margin: 0;
-        background-position:center;
-        background-size: 120%;
-    }
-}
-
-
-
 
 
 /*--------- Meus projetos ----------*/
@@ -359,7 +280,6 @@ a {
     
         }
     }
-
     @media screen and (min-width: 768px) {
         .fraseMotivacional {
             text-align: center;
