@@ -10,7 +10,7 @@ function mudaIdioma() {
     let sobreMimHeader = document.getElementById('sobreMimHeader').innerHTML = 'Projects';
     let entreEmContatoHeader = document.getElementById('entreEmContatoHeader').innerHTML = 'Contact me';
     let apresentacaoText1 = document.getElementById('apresentacaoText1').innerHTML = 'Hi, my name is';
-    let apresentacaoText3 = document.getElementById('apresentacaoText3').innerHTML = 'Front-end Developer | Database Analyst';
+    let apresentacaoText3 = document.getElementById('apresentacaoText3').innerHTML = 'iOS Engineer';
     let meusProjetosTitulo = document.getElementById('meusProjetosTitulo').innerHTML = 'Projects';
     let meusProjetosTexto = document.getElementById('meusProjetosTexto').innerHTML = 'One of the better ways to learn is practicing, and this is what i get from my projects, and i also take the opportunity to put into my academic portfolio.';
     let entreEmContatoFooter = document.getElementById('entreEmContatoFooter').innerHTML = 'Contact me';
